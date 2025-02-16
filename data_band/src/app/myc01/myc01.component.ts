@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
+import { Myc02NgforComponent } from "../myc02-ngfor/myc02-ngfor.component";
 
 @Component({
   selector: 'app-myc01',
-  imports: [],
   templateUrl: './myc01.component.html',
   styleUrl: './myc01.component.css'
 })

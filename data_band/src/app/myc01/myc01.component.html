@@ -1,4 +1,5 @@
-<p>数据绑定--HTML绑定</p>
+<h1>数据绑定</h1>
+<h2>HTML绑定</h2>
 <div>年龄：{{age}}</div>
 <div>是否成年了？{{age>=18}}</div>
 <div>是否成年了？{{age>=18 ? '成年':'未成年'}} </div>
@@ -13,7 +14,7 @@
 <!-- <div>JSON字符串：{{JSON.stringify()}}</div> -->
 
 <hr>
-<p>数据绑定--属性绑定</p>
+<h2>属性绑定</h2>
 <p title='{{uname}}'>
     这是一段文字......双隐号和单引号都是可以的。
 </p>
@@ -28,13 +29,9 @@
 <img src="../assets/1.jpg">
 
 <hr>
-<p>数据绑定--事件绑定</p>
+<h2>事件绑定</h2>
 <button (click)="minusCount()">-</button>
 <span>{{count}}</span>
 <button [title]="'当前购买数量：' + count" (click)="addCount()">+</button>
 
 <hr>
-<p>数据绑定--指令绑定</p>
-
-
-

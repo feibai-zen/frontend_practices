@@ -1,0 +1,34 @@
+<h2>指令绑定</h2>
+<h3>选择指令-ngIf</h3>
+
+<div *ngIf="isPayingUser()">此区域的内容仅限付费用户可见--通过函数判断</div>
+<div *ngIf="payingUser">此区域的内容仅限付费用户可见--通过属性判断</div>
+
+<hr>
+<div *ngIf="age>=18; else forChildren">
+    此处是成年家长可以看到的内容...
+</div>
+
+<ng-template #forChildren>
+    <h2>
+        此处是未成年的宝宝们看到的内容...
+    </h2>
+</ng-template>
+
+<hr>
+<div *ngIf="age >= 18; then adultTemplate else childTemplate"></div>
+<ng-template #adultTemplate>
+    此处是成年家长可以看到的内容...
+</ng-template>
+<ng-template #childTemplate>
+    此处是未成年儿童可以看到的内容...
+</ng-template>
+
+<hr>
+<button *ngIf="hasMore; else noMore" (click)="loadMore()">
+加载更多
+</button>
+<ng-template #noMore>
+    <hr>
+    <p>没有更多内容了...</p>
+</ng-template>

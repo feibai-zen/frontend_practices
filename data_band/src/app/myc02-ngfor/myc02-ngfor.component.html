@@ -1,0 +1,16 @@
+<h2>指令绑定</h2>
+<h3>循环指令-ngFor</h3>
+
+<ul>
+    <li *ngFor="let e of emplist">{{e}}</li>
+</ul>
+
+
+<!-- 将元素的下标也显示 -->
+<ul>
+    <li *ngFor="let e of emplist; let i= index">{{i}}-{{e}}</li>
+</ul>
+
+<ul>
+    <li *ngFor="let e of emplist; index as i">{{i}}-{{e}}</li>
+</ul>
