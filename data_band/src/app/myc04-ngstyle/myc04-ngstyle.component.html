@@ -1,0 +1,33 @@
+<h2>指令绑定</h2>
+<h3>样式指令-ngStyle</h3>
+
+<!-- ngStyle绑定的必须是一个对象。对象的属性就是CSS的样式名 -->
+<hr>
+<button *ngIf="hasMore; else noMore" (click)="loadMore()" [ngStyle]="{'background-color': '#383'}">
+    加载更多
+</button>
+<ng-template #noMore>
+    <hr>
+    <p [ngStyle]="{'background-color':'#252'}">没有更多内容了...</p>
+</ng-template>
+
+<hr>
+<button *ngIf="hasMore; else noMore" (click)="loadMore()" [ngStyle]="myStyleObj">
+    加载更多
+</button>
+<ng-template #noMore>
+    <hr>
+    <p [ngStyle]="noMoreStyleObj">没有更多内容了...</p>
+</ng-template>
+
+<!-- 点击button之后改变颜色 -->
+<hr>
+<button (click)="loadMore()" [ngStyle]="myStyleObj">
+    加载更多
+</button>
+
+<!-- 点击button之后改变颜色 -->
+<hr>
+<button (click)="loadMore()" [ngStyle]="myStyleObj">
+    加载更多
+</button>

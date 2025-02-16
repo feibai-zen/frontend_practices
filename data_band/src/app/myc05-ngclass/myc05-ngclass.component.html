@@ -1,0 +1,7 @@
+<h2>指令绑定</h2>
+<h3>样式指令-ngClass</h3>
+<!-- ngClass绑定的值必须是一个对象，对象的属性就是CSS class名，属性值为true/false，
+    --true 的话该class就出现，
+    --false 的话就不出现 -->
+
+<button [ngClass]="myClassObj" (click)="loadMore2()">加载更多</button>
