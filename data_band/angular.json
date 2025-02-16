@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "band_html": {
+    "data_band": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/band_html",
+            "outputPath": "dist/data_band",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -24,7 +24,9 @@
               {
                 "glob": "**/*",
                 "input": "public"
-              }
+              },
+              "src/assets",
+              "src/additional-assets"
             ],
             "styles": [
               "src/styles.css"
@@ -59,10 +61,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "band_html:build:production"
+              "buildTarget": "data_band:build:production"
             },
             "development": {
-              "buildTarget": "band_html:build:development"
+              "buildTarget": "data_band:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -82,7 +84,9 @@
               {
                 "glob": "**/*",
                 "input": "public"
-              }
+              },
+              "src/assets",
+              "src/additional-assets"
             ],
             "styles": [
               "src/styles.css"
@@ -94,6 +98,6 @@
     }
   },
   "cli": {
-    "analytics": false
+    "analytics": "fb98313b-889d-4bee-85c1-78eb0522805e"
   }
 }

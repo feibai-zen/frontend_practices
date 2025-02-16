@@ -9,5 +9,5 @@ import { Myc01Component } from './myc01/myc01.component';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'band_html';
+  title = 'data_band';
 }

@@ -8,5 +8,18 @@ import { Component } from '@angular/core';
 })
 export class Myc01Component {
   uname = 'feibai';
-  age = 20
+  age = 28;
+
+  count = 3;
+  // imgUrl = '../assets/1.jpg';
+  imgUrl = '1.jpg'
+
+  printUname() {
+    console.log(this.age);
+
+  }
+
+  addCount() { this.count++ }
+
+  minusCount() { this.count-- }
 }
