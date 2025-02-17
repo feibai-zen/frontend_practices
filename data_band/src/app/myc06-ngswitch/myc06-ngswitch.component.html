@@ -1,4 +1,15 @@
 <h2>指令绑定</h2>
 <h3>选择指令-ngSwitch</h3>
 
-
+<div [ngSwitch]="userLevel">
+    <!-- 注意这里字符串的写法 -->
+    <p *ngSwitchCase="'normal'">普通用户</p>
+    <div *ngSwitchCase="'vip'">Vip用户</div>
+    <p *ngSwitch="'black_gold'">黑金卡用户</p>
+    <span *ngSwitchCase="'gold'">
+        <p>热烈欢迎</p>
+        <p>尊贵的</p>
+        <h3>金卡用户</h3>
+    </span>
+    <span *ngSwitchDefault>没有登录</span>
+</div>
