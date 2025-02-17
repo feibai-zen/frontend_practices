@@ -1,5 +1,13 @@
 <h2>指令绑定</h2>
 <h3>双向数据绑定-ngModel</h3>
 
+<!-- 
+    方向1：Model => View， 模型变则视图变，用[]表示。上面的示例都是Model->View的绑定
+    方向2：View => Model， 视图（表单元素，例如输入框等）变则模型变，用()表示。底层原理是事件监听
+-->
+<input [(ngModel)]="uname" placeholder="请输入姓名：">
+<p>当前用户输入为：{{uname}}</p>
 
 
+<hr>
+<input [(ngModel)]="userName" placeholder="请输入姓名：" (ngModelChange)="nameChangeProcessor()">

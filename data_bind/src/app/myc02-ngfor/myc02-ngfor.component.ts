@@ -7,11 +7,7 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './myc02-ngfor.component.html',
   styleUrl: './myc02-ngfor.component.css'
 })
-export class Myc02NgforComponent implements OnInit {
-  ngOnInit(): void {
-    throw new Error('Method not implemented.');
-  }
-
+export class Myc02NgforComponent {
   emplist = ['亮亮', '然然', '东东', '涛涛'];
 
 }

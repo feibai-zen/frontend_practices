@@ -8,5 +8,11 @@ import { FormsModule } from '@angular/forms';
   styleUrl: './myc07-ngmodel.component.css'
 })
 export class Myc07NgmodelComponent {
+  uname = 'dingding';
+  userName = ''
+
+  nameChangeProcessor() {
+    console.log(this.userName)
+  }
 
 }
