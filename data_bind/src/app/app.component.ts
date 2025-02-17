@@ -16,5 +16,5 @@ import { Myc07NgmodelComponent } from './myc07-ngmodel/myc07-ngmodel.component';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'data_band';
+  title = 'data_bind';
 }
