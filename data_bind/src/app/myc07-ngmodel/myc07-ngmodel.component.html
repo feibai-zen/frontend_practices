@@ -10,4 +10,9 @@
 
 
 <hr>
+<!-- ngModelChange是Angular专门提供的事件绑定 -->
 <input [(ngModel)]="userName" placeholder="请输入姓名：" (ngModelChange)="nameChangeProcessor()">
+
+<h3>练习：输入用户名，根据长度给出提示信息</h3>
+<input type="password" [(ngModel)]="testUserName" (ngModelChange)="testUserNameChanging()">
+<span>{{tips_msg}}</span>
