@@ -1,6 +1,6 @@
 <h2>Employee Object table List demo</h2>
 
-<h2>员工管理列表</h2>
+<h2>员工管理列表--使用管道处理性别</h2>
 <hr>
 
 <table border="1" width="100%">
@@ -19,7 +19,7 @@
                 <td> {{e.empid}} </td>
                 <td> {{e.uname}} </td>
                 <td> {{e.uname}} </td>
-                <td> {{e.sex}} </td>
+                <td> {{e.sex | sexPipe:'zh'}} </td>
                 <td> {{e.salary}} </td>
                 <td> {{e.age}} </td>
                 <td>
@@ -30,3 +30,4 @@
 
     </tbody>
 </table>
+

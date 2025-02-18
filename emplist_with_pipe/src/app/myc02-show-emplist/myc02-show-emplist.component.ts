@@ -1,21 +1,19 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { SexPipePipe } from "../sex-pipe.pipe";
 
 @Component({
   selector: 'app-myc02-show-emplist',
-  imports: [FormsModule, CommonModule],
+  imports: [FormsModule, CommonModule, SexPipePipe],
   templateUrl: './myc02-show-emplist.component.html',
   styleUrl: './myc02-show-emplist.component.css'
 })
 export class Myc02ShowEmplistComponent {
 
   deleteEmp(index: number) {
-    console.log('delete' + index)
     this.emplist.splice(index, 1)
-
   }
-
 
   emplist = [
     {
