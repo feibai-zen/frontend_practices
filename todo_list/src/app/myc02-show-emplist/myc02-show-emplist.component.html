@@ -1,0 +1,31 @@
+<h2>Employee Object table List demo</h2>
+
+<h2>员工管理列表</h2>
+<hr>
+
+<table border="1" width="100%">
+    <tbody>
+        <div *ngIf="emplist.length==0;then noEmp else hasEmp"></div>
+
+        <ng-template #noEmp>
+            <tr>
+                <td colspan="7">
+                    没有员工了....
+                </td>
+            </tr>
+        </ng-template>
+        <ng-template #hasEmp>
+            <tr *ngFor="let e of emplist; index as i">
+                <td> {{e.empid}} </td>
+                <td> {{e.uname}} </td>
+                <td> {{e.birthday}} </td>
+                <td> {{e.salary}} </td>
+                <td> {{e.age}} </td>
+                <td>
+                    <button (click)="deleteEmp(i)">删除</button>
+                </td>
+            </tr>
+        </ng-template>
+
+    </tbody>
+</table>

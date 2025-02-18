@@ -1,8 +1,6 @@
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
-import { isEmpty } from 'rxjs';
-
 
 @Component({
   selector: 'app-myc01-todolist',
@@ -28,3 +26,4 @@ export class Myc01TodolistComponent {
     this.todoList.splice(index, 1)
   }
 }
+
