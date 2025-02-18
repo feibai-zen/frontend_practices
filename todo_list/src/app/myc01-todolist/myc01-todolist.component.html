@@ -1,0 +1,18 @@
+<h2>Todo List demo</h2>
+
+<h2>代办事件列表</h2>
+<hr>
+<input type="text" placeholder="请输入代办事项..." [(ngModel)]="userInput">
+<button (click)="addTodoItem()">添加事项</button>
+
+<div *ngIf="todoList.length == 0; then noTodoItem else hasTodoItem"></div>
+<ng-template #hasTodoItem>
+    <li *ngFor="let todo of todoList; let i=index">
+        {{i+1}}-{{todo}} 
+        <button (click)="deleteTodoItem(i)">删除</button>
+    </li>
+</ng-template>
+
+<ng-template #noTodoItem>
+    <p>尚无代办事项</p>
+</ng-template>
