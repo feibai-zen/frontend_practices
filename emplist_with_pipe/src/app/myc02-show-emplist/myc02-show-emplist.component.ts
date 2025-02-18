@@ -2,10 +2,12 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { SexPipePipe } from "../sex-pipe.pipe";
+import { JsonPipe } from '@angular/common';
+
 
 @Component({
   selector: 'app-myc02-show-emplist',
-  imports: [FormsModule, CommonModule, SexPipePipe],
+  imports: [FormsModule, CommonModule, SexPipePipe, JsonPipe],
   templateUrl: './myc02-show-emplist.component.html',
   styleUrl: './myc02-show-emplist.component.css'
 })
