@@ -11,7 +11,7 @@ import { Pipe, PipeTransform } from '@angular/core';
 @Pipe({
   name: 'sexPipe'
 })
-export class SexPipePipe implements PipeTransform {
+export class SexPipe implements PipeTransform {
 
   transform(value: number, lang = 'zh') {
     if (lang == 'zh') {
