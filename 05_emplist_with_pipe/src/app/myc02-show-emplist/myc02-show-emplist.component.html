@@ -9,12 +9,10 @@
 
         <ng-template #noEmp>
             <tr>
-                <td colspan="7">
-                    没有员工了....
-                </td>
+                <td colspan="7">没有员工了....</td>
             </tr>
         </ng-template>
-        <ng-template #hasEmp>
+        <ng-template #hasEmp>`              
             <tr *ngFor="let e of emplist; index as i">
                 <td> {{e.empid}} </td>
                 <td> {{e.uname}} </td>

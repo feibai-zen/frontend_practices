@@ -21,3 +21,15 @@ table 展示员工列表，并使用自定义Pipe（管道）处理员工性别
 两种服务对象注入方式
 1）单例
 2）为每个组件分别注入服务组件
+3）HttpClient Service 向指定URL发送异步请求
+
+
+# 07_httpclient_usage
+HttpClient 使用
+
+
+# 08_component_lifecycle
+组件生命周期
+
+# 09_sharing_data_parent_child
+父子组件之间的数据传递
