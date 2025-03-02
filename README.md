@@ -31,5 +31,17 @@ HttpClient 使用
 # 08_component_lifecycle
 组件生命周期
 
+
 # 09_sharing_data_parent_child
 父子组件之间的数据传递
+1) Props down, Event up
+2) 使用组件标签（组件识别符）的形式
+
+
+
+# 10_single_page_app
+路由
+路由跳转/导航--从index组件的html文件中跳转
+1）router-link 
+2) ts 脚本跳转
+3）路由传参传递

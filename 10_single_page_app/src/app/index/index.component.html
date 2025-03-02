@@ -1,0 +1,29 @@
+<p>index works!</p>
+
+<h3>1.使用模板跳转方法</h3>
+<!-- 传统的超链接可以跳转，但属于DOM树完全重建 -->
+<a href="ucenter">进入用户中心</a>
+
+<br>
+<a routerLink="/ucenter">进入用户中心</a>
+<br>
+<button routerLink="/ucenter">进入用户中心</button>
+<br>
+<div routerLink="/ucenter">进入用户中心</div>
+<br>
+<!-- 不加 / 的话，是相对于index/ucenter 这个地址 -->
+<!-- Not Found -->
+<div routerLink="ucenter">进入用户中心</div>
+
+
+<hr>
+<h3>2.使用脚本的方式跳转</h3>
+<button (click)="jump()">进入用户中心</button>
+
+<hr>
+<h3>3.路由跳转---路由参数</h3>
+<p routerLink="/pdetail/10">查看 10 号商品详情页</p>
+<p routerLink="/pdetail/15">查看 15 号商品详情页</p>
+<br>
+<!-- 不传递商品id，也会进入到监听商品id的方法中，即：ngOnInit中的route.params.subscribe方法 -->
+<div routerLink="/pdetail">进入商品详情页</div>
